@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #0d192b;
+}
+
+main {
+  background: #14253d;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+main img:nth-child(1) {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+main h2 {
+  margin: 1rem 0;
+}
+
+main p {
+  line-height: 1.7;
+  color: #8bacda;
+}
+
+main .eth-time {
+  margin: 1rem 0 0;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #8bacda;
+}
+
+main .eth-time span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .eth-time span:nth-child(1) {
+  color: #00fff7;
+}
+
+main .eth-time span:nth-child(2) {
+  color: #8bacda;
+}
+
+main .eth-time span img {
+  margin-right: 0.5rem;
+}
+
+main .creator {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+main .creator img {
+  width: 30px;
+  margin-right: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+main .creator p span {
+  color: white;
+}

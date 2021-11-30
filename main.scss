@@ -1,0 +1,79 @@
+$SoftBlue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+$VeryDarkBlue1: hsl(217, 54%, 11%); // main BG
+$VeryDarkBlue2: hsl(216, 50%, 16%); // card BG
+$VeryDarkBlue3: hsl(215, 32%, 27%); // line
+$White: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $White;
+  background: $VeryDarkBlue1;
+}
+
+main {
+  background: $VeryDarkBlue2;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  img:nth-child(1) {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  h2 {
+    margin: 1rem 0;
+  }
+  p {
+    line-height: 1.7;
+    color: $SoftBlue;
+  }
+  .eth-time {
+    margin: 1rem 0 0;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $SoftBlue;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        color: $Cyan;
+      }
+      &:nth-child(2) {
+        color: $SoftBlue;
+      }
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .creator {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    img {
+      width: 30px;
+      margin-right: 1rem;
+      border: 1px solid $White;
+      border-radius: 50%;
+    }
+    p {
+      span {
+        color: $White;
+      }
+    }
+  }
+}
